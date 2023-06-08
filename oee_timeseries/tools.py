@@ -41,7 +41,7 @@ def insert_datapoints(
         for new_ts in missing_ext_ids
     ]
     if len(timeseries_list) > 0:
-        # Create missing timeseries
+        # Create missing timeseries dd
         client.time_series.create(timeseries_list)
         print(f"Created missing {len(timeseries_list)} timeserie(s).")
 
